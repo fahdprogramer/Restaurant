@@ -1,0 +1,130 @@
+</html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" ng-controller="loginCtrl" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Restaurant catring</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css">
+
+  <link rel="stylesheet" href="app.css">
+  
+
+
+  <!-- ------------------------------------assert-------------------------------------- -->
+
+  <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+
+    <!--For Plugins external css-->
+    <link href="assets/css/animate/animate.css" rel="stylesheet">
+    <link href="assets/css/plugins.css" rel="stylesheet">
+
+    <!--Theme custom css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--Theme Responsive css-->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+
+
+   
+
+
+
+    
+
+   
+    <script src="assets/js/wow/wow.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- ------------------------------------ /assert -------------------------------------- -->
+
+
+</head>
+<body>
+<header id="home" class="navbar-fixed-top">
+
+
+    <div class="main_menu_bg">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a  href="#/"><img src="assets/images/logo.png" style="width: 217px;    margin-top: -50px;" alt="" /></a>
+                            
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                
+                                    <li {{f}}><a href="#/login" class="booking">Login-{{f}}-</a></li>
+                                    <li {{isLogged}}><a href="#/register" class="booking">Register</a></li>
+
+
+                                   
+                                        <li ng-show="isLogged"><a href="#/" class="booking">Acceil</a></li>
+                                        <li ng-show="isLogged"><a href="#/food" class="booking">Plats</a></li>
+                                        
+                                      <!--  <li ng-show="isLogged" class="" ><a href="#/logout" class="booking">Logout</a></li>-->
+                                       
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="py-4" style="padding-top: 80px">
+
+<div ng-view>{{theTime}}</div>
+</main>
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+
+<script src="bower_components/angular-payments/lib/angular-payments.js"></script>
+
+
+<script src="app.js"></script>
+<script src="view/auth/login.js"></script>
+<script src="view/auth/register.js"></script>
+<script src="view/root/root.js"></script>
+<script src="view/food/food.js"></script>
+<script src="view/tables/tables.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+body{
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+.carousel{
+	width: 100%;
+	margin-top: -20px;
+	overflow: hidden;
+}
+
+.carousel-caption{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	left: 0;
+	bottom: 0px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.carousel-indicators{
+position: absolute;
+top: 35px;
+left: 97%;
+height:20px;	
+}
+
+.carousel-control{
+position: absolute;
+top: 40%;
+left: 15px;
+width: 40px;
+height: 40px;
+margin-top: -20px;
+font-size: 40px;
+font-weight: 100;
+line-height: 30px;
+color: white;
+text-align: center;
+}
+
+/*.right-arrow{
+position: absolute;
+top: 40%;
+left:96%;
+}*/
+
+#main{
+
+}
+
+.tab-pane{margin-bottom: 60px;}
+
+.search-box {
+	margin-top: 40px;
+	/*background: #f8f8f8;
+	border:1px solid #e7e7e7;
+	border-radius: 2px;
+	padding: 10px 0;*/
+}
+
+	.search-box .form-group{
+		margin-right: 20px;
+	}
+
+	.fa-spin{
+		margin-left: 5px;
+	}
+
+.tables-container{
+margin-top: 40px;
+/*padding-left: 40px;*/
+}
+
+.restaurant-table{
+	background: url('images/table_bg.jpg');
+	border: 1px solid #cf8e54;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+/***tooltip***/
+.tooltip.right{
+	min-width: 340px !important;
+	border-radius: 5px;
+}
+
+.tooltip-inner {
+  min-width: 335px !important;
+}
+
+/*** form wrapper ***/
+.form-wrapper{
+	margin-top: 10px;
+	padding: 0;
+}
+
+	.form-wrapper form{
+		padding: 10px;
+	}
+
+	form[name="usersForm"]{
+		margin-bottom: 60px;
+	}
+
+.icon{
+	margin-top: 50px;
+}
+
+/*** footer ***/
+footer{
+	padding-top: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+footer p, footer a{color: #fff;}
+
+/***helper classes ***/
+.inline{display:inline;}
+
+.breathe{margin: 40px 0;}
+
+.breathe80{margin-top: 80px;}
+
+.breathe120{margin-top: 120px;}
+
+.center{text-align: center;}
+.left{text-align: left;}
+.right{text-align: right;}
+
+.custom-input{width:70%;}
+
+.add-link{margin-top:40px; cursor: pointer}
+
+.muted{color:#929292;}
+
+/*** form validation  angular***/
+.ng-invalid.ng-dirty{
+	border-color: //#fa787e;
+}
+
+.ng-valid.ng-dirty{
+	border-color:#78F9F4;
+ /*#78fa89*/
+}
+.ng-pristine{
+
+}
+
+.pass-mismatch{
+	border-color: #fa787e !important;
+}

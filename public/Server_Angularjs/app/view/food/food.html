@@ -1,0 +1,54 @@
+ <head>
+       
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="../../assets2/css/normalize.css">
+        <link rel="stylesheet" href="../../assets2/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets2/css/fontello.css">
+        <link href="../../assets2/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+        <link href="../../assets2/fonts/icon-7-stroke/css/helper.css" rel="stylesheet">
+        <link href="../../assets2/css/animate.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="../../assets2/css/bootstrap-select.min.css"> 
+       
+        <link rel="stylesheet" href="../../assets2/css/icheck.min_all.css">
+        <link rel="stylesheet" href="../../assets2/css/price-range.css">
+        <link rel="stylesheet" href="../../assets2/css/owl.carousel.css">  
+        <link rel="stylesheet" href="../../assets2/css/owl.theme.css">
+        <link rel="stylesheet" href="../../assets2/css/owl.transitions.css">
+        <link rel="stylesheet" href="../../assets2/css/style.css">
+        <link rel="stylesheet" href="../../assets2/css/responsive.css">
+    </head>
+<div class="content-area recent-property" style="background-color: #FCFCFC; padding-bottom: 55px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
+                        <!-- /.feature title -->
+                        <h2>Menu des repas{{idx}}</h2>
+                        <p>Choisissez les repas que vous voulez manger</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="proerty-th">
+                        <div class="col-sm-6 col-md-3 p0" ng-repeat="food_type in food_types" >
+                            <div class="box-two proerty-item">
+                                <div class="item-thumb">
+                                    <a href="property-1.html"><img src="../../assets2/img/demo/{{food_type.photo}}"></a>
+                                </div>
+                                <div class="item-entry overflow">
+                                    <h5><a href="property-1.html">{{food_type.name}}</a></h5>
+                                    <div class="dot-hr"></div>
+                                  <!--  <span class="pull-left"><b>Area :</b> 120m </span>-->
+                                  <button class="btn btn-primary" ng-click="select_type($index)">choisissez</button> 
+                                    <span class="proerty-price pull-right">$ {{food_type.prix}}</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
